@@ -1,33 +1,39 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import profilepic from './assets/profile.jpg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='sections' id="title-content">
+        <div className="sections" id ="inner">
+          <h1>
+            Michelle Ordonez Campos
+          </h1>
+          <h3>CS @ Northwestern</h3>
+        </div>
+        <span>
+          <img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fillustrations%2Fprofile&psig=AOvVaw1yIPFVzAil4nqAF4hq4GpH&ust=1738013948738000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPif-_GslIsDFQAAAAAdAAAAABAE'/>
+        </span>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div className='sections'>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          intro here
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className='sections'>
+        <p>
+          experience here
+        </p>
+      </div>
+      <div className='sections'>
+        <p>
+          projects here
+        </p>
+      </div>
     </>
   )
 }
